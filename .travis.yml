@@ -17,4 +17,4 @@ script:
 - hexo clean
 - hexo generate
 after_script:
-- scp -r StrictHostKeyChecking=no /public root@$HOST:/var/www/html
+- scp -o StrictHostKeyChecking=no -r /public root@$HOST:/var/www/html
