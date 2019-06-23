@@ -2,23 +2,21 @@ language: node_js
 node_js: stable
 sudo: required
 addons:
-  ssh_known_hosts: $HOST
+  ssh_known_hosts: "$HOST"
 cache:
   directories:
-    - node_modules
-
+  - node_modules
 before_install:
-  - openssl aes-256-cbc -K $encrypted_92bf3cf2c8b0_key -iv $encrypted_92bf3cf2c8b0_iv
-    -in id_rsa.enc -out ~/.ssh/id_rsa -d
-  - chmod 600 ~/.ssh/id_rsa
-  - npm install -g hexo-cli
-
+- openssl aes-256-cbc -K $encrypted_92bf3cf2c8b0_key -iv $encrypted_92bf3cf2c8b0_iv
+  -in id_rsa.enc -out ~\/.ssh/id_rsa -d
+- openssl aes-256-cbc -K $encrypted_92bf3cf2c8b0_key -iv $encrypted_92bf3cf2c8b0_iv
+  -in id_rsa.enc -out ~/.ssh/id_rsa -d
+- chmod 600 ~/.ssh/id_rsa
+- npm install -g hexo-cli
 install:
-  - npm install
-
+- npm install
 script:
-  - hexo clean
-  - hexo generate
-
+- hexo clean
+- hexo generate
 after_script:
-  - scp -r /public root@$HOST:/var/www/html
+- scp -r /public root@$HOST:/var/www/html
