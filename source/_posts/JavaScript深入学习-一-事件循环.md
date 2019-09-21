@@ -30,7 +30,9 @@ thumbnail: http://image.linsenx.com/blog/2019-09-19-daniel-leone-v7daTKlZzaw-uns
 
 > 我们先引入[任务](https://html.spec.whatwg.org/multipage/webappapis.html#concept-task)的概念，可以将任务理解为函数，若直接返回结果为**同步任务**（函数），若通过回调函数返回结果为**异步任务**（函数）。
 
-从一小节我们了解了执行栈的概念，理解了JavaScript脚本的执行方式就是通过往执行栈中压入函数。你们应该知道JavaScript是一种单线程脚本语言，所以代码的执行是需要排队的，如果不对异步任务进行处理，它就会阻塞之后代码的运行，因此JavaScript采用了回调的模式避免等待耗时异步任务，当遇到异步函数时，就会将其放入外部环境如**浏览器环境**，**Node.js运行环境**中的线程中进行处理，待处理完毕后再将运行结果和回调函数放入JavaScript的任务队列中。而这个协调异步任务与同步任务运行顺序的机制被叫做**事件循环**。
+从一小节我们了解了执行栈的概念，理解了JavaScript脚本的执行方式就是通过往执行栈中压入函数。
+
+你们应该知道JavaScript是一种单线程脚本语言，所以代码的执行是需要排队的，如果不对异步任务进行处理，它就会阻塞之后代码的运行，因此JavaScript采用了回调的模式避免等待耗时异步任务，当遇到异步函数时，就会将其放入外部环境如**浏览器环境**，**Node.js运行环境**中的线程中进行处理，待处理完毕后再将运行结果和回调函数放入JavaScript的任务队列中。而这个协调异步任务与同步任务运行顺序的机制被叫做**事件循环**。
 
 > 以浏览器环境为例，有以下线程用于处理异步任务：
 >
@@ -42,11 +44,11 @@ thumbnail: http://image.linsenx.com/blog/2019-09-19-daniel-leone-v7daTKlZzaw-uns
 
 **宏任务**可以通过以下方式被创建：
 
-script, setTimeout, setInterval, setImmediate, requestAnimationFrame, I/O, UI Rendering。
+script, setTimeout, setInterval, setImmediate, requestAnimationFrame, I/O, UI Rendering
 
 **微任务**可以通过以下方式被创建：
 
-promise, MutationObserver。
+promise, MutationObserver
 
 >1. 在**浏览器环境**或**Node.js运行环境**中，**最先**被放入宏任务队列的是script宏任务
 >2. promise的then回调才是微任务，new Promise(executor)的executor是**立即执行函数**因此为**同步任务**
