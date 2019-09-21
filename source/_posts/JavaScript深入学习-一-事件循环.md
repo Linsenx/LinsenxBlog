@@ -105,7 +105,7 @@ from timer 1
 
 
 
-在前端开发中，相较于promise的回调式异步，人们更加喜欢于以类同步思想组织代码的async/await。在引出下一道题之前，让我们先来看一下ES6中的async-await在事件循环中是如何运作的。
+在前端开发中，相较于promise的回调式异步，人们更加喜欢于以类同步思想组织代码的async/await。在引出下一道题之前，让我们先来看一下async/await在事件循环中是如何运作的。
 
 ```javascript
 console.log('script start');
