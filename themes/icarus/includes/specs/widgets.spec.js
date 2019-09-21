@@ -10,11 +10,11 @@ const DEFAULT_WIDGETS = [
         avatar: null,
         gravatar: null,
         avatar_rounded: false,
-        follow_link: 'https://github.com/ppoffice',
+        follow_link: 'https://github.com/nightcats',
         social_links: {
             Github: {
                 icon: 'fab fa-github',
-                url: 'https://github.com/ppoffice'
+                url: 'https://github.com/nightcats'
             },
             Facebook: {
                 icon: 'fab fa-facebook',
