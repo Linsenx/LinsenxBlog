@@ -1,7 +1,8 @@
 ---
 title: JavaScript深入学习(一) -- 事件循环
 date: 2019-09-17 18:25:55
-tags:JavaScript深入学习 JavaScript
+tags:
+	- JavaScript深入学习
 ---
 
 ![](http://image.linsenx.com/blog/2019-09-19-daniel-leone-v7daTKlZzaw-unsplash.jpg)
@@ -196,4 +197,3 @@ setTimeout
 ```
 
 其中的易错点是promise1的输出顺序，因为`console.log('promise1')`位于promise的立即执行函数中，因此它也是同步任务。
-
