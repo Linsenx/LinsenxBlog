@@ -8,7 +8,7 @@ subtitle:
 description: Man proposes, God disposes.
 keywords:
 author: NightCats
-language:
+language: zh-CN
 timezone:
 avatar: /images/favicon.png
 
@@ -81,7 +81,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: anatole
+theme: icarus
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
