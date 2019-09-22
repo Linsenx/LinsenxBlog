@@ -64,5 +64,10 @@ module.exports = {
         [type]: 'boolean',
         [doc]: 'BuSuanZi site/page view counter\nhttps://busuanzi.ibruce.info',
         [defaultValue]: false
-    }
+    },
+    oryx: {
+        [type]: 'boolean',
+        [doc]: 'BuSuanZi site/page view counter\nhttps://github.com/NightCats/Oryx',
+        [defaultValue]: false
+    }    
 };

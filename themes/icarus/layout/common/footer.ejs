@@ -19,6 +19,12 @@
                 <%- _p('plugin.visitor', '<span id="busuanzi_value_site_uv">0</span>') %>
                 </span>
                 <% } %>
+                <% if (has_config('plugins.oryx') ? get_config('plugins.oryx') : false) { %>
+                <br>
+                <span>
+                <%- _p('plugin.visitor', '<span id="oryx_page_uv">0</span>') %>
+                </span>
+                <% } %>                
                 </p>
             </div>
             <div class="level-end">

@@ -34,6 +34,12 @@
                     <%- _p('plugin.visit', '<span id="busuanzi_value_page_pv">0</span>') %>
                 </span>
                 <% } %>
+                <% if (!index && (has_config('plugins.oryx') ? get_config('plugins.oryx') : false)) { %>
+                <span class="level-item has-text-grey">
+                    <i class="far fa-eye"></i>
+                    <%- _p('plugin.visit', '<span id="oryx_page_pv">0</span>') %>
+                </span>
+                <% } %>
             </div>
         </div>
         <% } %>
