@@ -72,7 +72,9 @@ search:
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment
 comment:
     # Name of the comment plugin
-    type: 
+    type: valine
+    app_id: 1bNnQrTnmj8gfyIiSs3GDlu4-gzGzoHsz
+    app_key: 0igSGWrrbBi40PQexEfNUTPh
 # Donation entries
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Donation/
 # donate:
