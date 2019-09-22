@@ -231,4 +231,4 @@ providers:
     # Name or URL of the webfont CDN provider
     fontcdn: google
     # Name or URL of the webfont Icon CDN provider
-    iconcdn: 'https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
+    iconcdn: 'https://cdn.bootcss.com/font-awesome/5.10.2/css/all.min.css'
