@@ -71,13 +71,13 @@ target.addEventListener(type, listener[, useCapture]);
 
 > 当在 B 元素的监听器中添加 `stopPropagation()` 语句，输出如下：
 
-![image-20191105101758140](/Users/apple/Library/Application Support/typora-user-images/image-20191105101758140.png)
+![image-20191105101758140](http://image.linsenx.com/blog/2019-11-05-030433.png)
 
 可以看出，在事件传播阶段中，位于 B捕获事件 之后的监听器（C命中事件的两个监听器）都没有得到调用，事件停止了传播。
 
 > 之后，改用 `stopImmediatePropagation()`， 输出如下：
 
-![image-20191105102118219](/Users/apple/Library/Application Support/typora-user-images/image-20191105102118219.png)
+![image-20191105102118219](http://image.linsenx.com/blog/2019-11-05-030441.png)
 
 可以看出，**不但 B 之后的事件被阻止**了，**第二个 B捕获 监听器也没有得到调用**（没有输出`B Capture twice`）。
 
@@ -128,5 +128,5 @@ container.addEventListener('click', e => {
 
 
 
-![image-20191105105848669](/Users/apple/Library/Application Support/typora-user-images/image-20191105105848669.png)
+![image-20191105105848669](http://image.linsenx.com/blog/2019-11-05-030449.png)
 
