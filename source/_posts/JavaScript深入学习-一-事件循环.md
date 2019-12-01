@@ -3,7 +3,7 @@ title: JavaScript深入学习(一) -- 事件循环
 date: 2019-09-17 18:25:55
 categories: JavaScript深入学习
 tags: [JavaScript, Event Loop]
-thumbnail: http://image.linsenx.com/blog/2019-09-19-daniel-leone-v7daTKlZzaw-unsplash.jpg
+thumbnail: http://image.linsenx.com/blog/2019-09-19-daniel-leone-v7daTKlZzaw-unsplash.jpg?imageMogr2/format/webp/blur/1x0/quality/75%7Cimageslim
 ---
 
 这是深入学习JavaScript系列的第一篇，该系列的写作目标主要是让我自己对JavaScript的运作机制有一个更深刻的理解，事件循环也是JavaScript中比较难懂的一个知识点，仅以个人理解和网络上的资料作为参考，如果存在错误之处，欢迎指正。
