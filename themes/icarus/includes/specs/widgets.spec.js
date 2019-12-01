@@ -87,7 +87,7 @@ const ProfileSpec = {
     avatar: {
         [type]: 'string',
         [doc]: 'Path or URL to the avatar to be shown in the profile widget',
-        [defaultValue]: '/images/avatar.png'
+        [defaultValue]: '//www.linsenx.com/images/avatar.png?imageMogr2/format/webp/blur/1x0/quality/75%7Cimageslim'
     },
     avatar_rounded: {
         [type]: 'boolean',
