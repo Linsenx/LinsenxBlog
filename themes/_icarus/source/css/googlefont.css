@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Code Pro Regular'), local('SourceCodePro-Regular'), url('./HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevT.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url('./4iCs6KVjbNBYlgoKfw7z.ttf') format('truetype');
+}
