@@ -4,13 +4,14 @@ date: 2019-09-17 18:25:55
 categories: JavaScript深入学习
 tags: [JavaScript, Event Loop]
 thumbnail: http://image.linsenx.com/blog/2019-09-19-daniel-leone-v7daTKlZzaw-unsplash.jpg?imageMogr2/format/webp/blur/1x0/quality/75%7Cimageslim
+toc: true
 ---
 
 这是深入学习JavaScript系列的第一篇，该系列的写作目标主要是让我自己对JavaScript的运作机制有一个更深刻的理解，事件循环也是JavaScript中比较难懂的一个知识点，仅以个人理解和网络上的资料作为参考，如果存在错误之处，欢迎指正。
 
 <!--more-->
 
-## 1.执行栈
+## 执行栈
 
 要谈事件循环，我们得先从JavaScript运行机制讲起，我们首先要了解执行栈的概念。
 
@@ -26,7 +27,7 @@ thumbnail: http://image.linsenx.com/blog/2019-09-19-daniel-leone-v7daTKlZzaw-uns
 
 
 
-## 2.事件循环
+## 事件循环
 
 > 我们先引入[任务](https://html.spec.whatwg.org/multipage/webappapis.html#concept-task)的概念，可以将任务理解为函数，若直接返回结果为**同步任务**（函数），若通过回调函数返回结果为**异步任务**（函数）。
 
@@ -66,7 +67,7 @@ promise, MutationObserver
 
 
 
-## 3.习题挑战
+## 习题挑战
 
 从上面两小节，我们已经理解了事件循环的机制，那么下面就让我们来做几道习题来巩固一下知识。
 

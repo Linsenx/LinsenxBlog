@@ -13,7 +13,7 @@ toc: true
 
 <!--more-->
 
-##  1.事件
+##  事件
 
 事件分为三个阶段：
 
@@ -25,7 +25,7 @@ toc: true
 
 <img src="http://image.linsenx.com/blog/2019-11-05-8861DE12-EAD2-47A7-9E91-CF873824AF41.png" height="500" />
 
-## 2.监听事件
+## 监听事件
 
 我们已经了解了事件的三个阶段，接下来我们要对事件进行监听，这就需要用到 `addEventListener`。
 
@@ -82,7 +82,7 @@ target.addEventListener(type, listener[, useCapture]);
 
 可以看出，**不但 B 之后的事件被阻止**了，**第二个 B捕获 监听器也没有得到调用**（没有输出`B Capture twice`）。
 
-## 3.事件委托模式
+## 事件委托模式
 
 > 试想这么一个场景，有一个动态列表（随时存在列表项的增删），我们如何监听列表项的点击事件？
 >
