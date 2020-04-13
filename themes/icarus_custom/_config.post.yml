@@ -1,36 +1,36 @@
 widgets: 
-    # Profile widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: profile
-        # Author name
-        author: NightCatS
-        # Author title
-        author_title: Web Developer
-        # Author's current location
-        location: HangZhou, China
-        # URL or path to the avatar image
-        avatar: 
-        # Whether show the rounded avatar image
-        avatar_rounded: false
-        # Email address for the Gravatar
-        gravatar: 
-        # URL or path for the follow button
-        follow_link: 'https://github.com/Linsenx'
-        # Links to be shown on the bottom of the profile widget
-        social_links:
-            Github:
-                icon: fab fa-github
-                url: 'https://github.com/Linsenx'
-            RSS:
-                icon: fas fa-rss
-                url: /
+#     # Profile widget configurations
+#     -
+#         # Where should the widget be placed, left sidebar or right sidebar
+#         position: left
+#         type: profile
+#         # Author name
+#         author: NightCatS
+#         # Author title
+#         author_title: Web Developer
+#         # Author's current location
+#         location: HangZhou, China
+#         # URL or path to the avatar image
+#         avatar: 
+#         # Whether show the rounded avatar image
+#         avatar_rounded: false
+#         # Email address for the Gravatar
+#         gravatar: 
+#         # URL or path for the follow button
+#         follow_link: 'https://github.com/Linsenx'
+#         # Links to be shown on the bottom of the profile widget
+#         social_links:
+#             Github:
+#                 icon: fab fa-github
+#                 url: 'https://github.com/Linsenx'
+#             RSS:
+#                 icon: fas fa-rss
+#                 url: /
     # Table of contents widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
         position: left
-        type: toc
+        type: toc      
     # Recent posts widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar

@@ -284,6 +284,8 @@ plugins:
     # BuSuanZi site/page view counter
     # https://busuanzi.ibruce.info
     busuanzi: true
+    # Oryx site/page view counter
+    # oryx: true
     # CNZZ statistics
     # https://www.umeng.com/web
     cnzz:
@@ -323,4 +325,4 @@ providers:
     # Name or URL template of the webfont CDN provider
     fontcdn: google
     # Name or URL of the fontawesome icon font CDN provider
-    iconcdn: fontawesome
+    iconcdn: "https://cdn.bootcss.com/font-awesome/5.13.0/css/all.css"

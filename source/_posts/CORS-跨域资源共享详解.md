@@ -3,9 +3,10 @@ title: CORS-跨域资源共享详解
 date: 2020-04-06 17:17:56
 tags: [CORS]
 thumbnail: http://image.linsenx.com/blog/2020-04-06-fantasy-2543658_1920.jpg?imageMogr2/format/webp/blur/1x0/quality/75%7Cimageslim
+toc: true
 ---
 
-## 1.介绍
+## 介绍
 
 跨域资源共享定义了一种方式，使浏览器和服务器之间能互相确认是否能够安全的使用跨域请求。
 
@@ -21,7 +22,7 @@ thumbnail: http://image.linsenx.com/blog/2020-04-06-fantasy-2543658_1920.jpg?ima
 
   <!--more-->
 
-## 2.工作原理
+## 工作原理
 
 CORS需要浏览器和服务器的共同支持：
 
@@ -40,7 +41,7 @@ CORS需要浏览器和服务器的共同支持：
 - Access-Control-Request-Method
 - Access-Control-Request-Header
 
-## 3.CORS请求的流程
+## CORS请求的流程
 
 将 CORS 请求分为两类：『简单请求』和『非简单请求』。
 
@@ -74,7 +75,7 @@ CORS需要浏览器和服务器的共同支持：
 2. 若服务器认定该源站不在许可范围内，服务器会返回正常的 HTTP 响应，但是响应头中不包含`Access-Control-Allow-Origin` 、`Access-Control-Allow-Method` 等字段。
 3. 浏览器根据 HTTP 响应头中是否包含 `Access-Control-Allow-Origin` 、`Access-Control-Allow-Method` 等字段，若不包含则证明『预检请求』失败，浏览器抛出相应的错误信息。若『预检请求』成功，则发送『主请求』。
 
-## 4.crossorigin属性
+## crossorigin属性
 
 `<img>`、`<script>`、`<link>`、`<audio>`、`<video>` 元素具有 crossorigin 属性。
 
@@ -82,7 +83,7 @@ CORS需要浏览器和服务器的共同支持：
 
 **但也存在例外，模块脚本（`<script type="module">`）无论是否指定 crossorigin 属性都会强制使用 CORS。**
 
-#### crossorigin的取值及作用：
+### crossorigin的取值及作用
 
 若指定了 crossorigin 属性，获取跨域资源时会使用 CORS，并可以控制获取跨域资源时是否携带 cookie 、HTTP Basic authentication 等凭据信息。
 
@@ -97,7 +98,7 @@ CORS需要浏览器和服务器的共同支持：
 - [img](https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-crossorigin)：控制跨域图像资源是否能被用于 `canvas`。
 - [script](https://html.spec.whatwg.org/multipage/scripting.html#attr-script-crossorigin)：对于经典脚本，可以控制跨域时是否暴露错误信息。
 
-## 5.XHR和Fetch发起跨域请求
+## XHR和Fetch发起跨域请求
 
 使用 `XMLHttpRequest` 发起跨域 HTTP 请求时，如果想要携带 cookie 必须指定 `withCrendential = true` 。
 
@@ -107,7 +108,7 @@ CORS需要浏览器和服务器的共同支持：
 - same-origin: 同源时才携带 cookie
 - include: 无论是否跨域，总是携带 cookie**（此时跨域资源返回的 `Access-Control-Allow-Origin` 不能是 `*` ，否则会抛出错误）**
 
-## 6.跨域脚本错误
+## 跨域脚本错误
 
 对经典脚本来说，若不指定 crossorigin 属性则完全不使用 CORS，这也是 JSONP 实现的原理。
 
@@ -150,9 +151,9 @@ function foo() {
 
 这并不是真正的错误信息，出于安全考虑，浏览器有意的隐藏了没有使用 CORS 的跨域脚本的错误信息，这是为了避免无意间把潜在的敏感信息暴露给了它无法控制的 onerror 回调。
 
-## 7.跨域脚本如何暴露错误信息
+## 跨域脚本如何暴露错误信息
 
-#### 方法一
+### 方法一
 
 一、给 script 标签添加 `crossorigin="anonymous"`
 
@@ -166,7 +167,7 @@ function foo() {
 Access-Control-Allow-Origin: http://another-domain.com
 ```
 
-#### 方法二
+### 方法二
 
 上面这种解决方案需要浏览器和服务器的配合，但在某些情况下，我们没有办法去调整服务器返回的响应头，在这个情况下，还有另外一种方案：使用 try/catch。
 
@@ -194,7 +195,7 @@ Access-Control-Allow-Origin: http://another-domain.com
 
 该 console 来自于 try/catch，可以看到输出了完整的错误信息。因此我们可以使用在调用跨域脚本中的函数时可以通过包裹一层 try/catch 来捕获完整的错误信息。
 
-## 8.Canvas 使用跨域图像
+## Canvas 使用跨域图像
 
 若使用跨域图像资源时不指定 crossorigin 属性，任可以使用 `drawImage` 将图像绘制到 canvas。但是 canvas 会“被污染”，在“被污染”的 canvas 使用以下方法将抛出错误：
 
@@ -210,7 +211,7 @@ Access-Control-Allow-Origin: http://another-domain.com
 
 
 
-### Reference:
+## Reference:
 
 - [https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin)
 - [https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-crossorigin](https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-crossorigin)
