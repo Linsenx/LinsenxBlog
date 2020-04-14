@@ -280,12 +280,12 @@ plugins:
     # https://tongji.baidu.com
     baidu_analytics:
         # Baidu Analytics tracking ID
-        tracking_id: 
+        tracking_id: 0214e7a458f5fdecbcb042a8b60d48dd
     # BuSuanZi site/page view counter
     # https://busuanzi.ibruce.info
-    busuanzi: true
+    # busuanzi: true
     # Oryx site/page view counter
-    # oryx: true
+    oryx: true
     # CNZZ statistics
     # https://www.umeng.com/web
     cnzz:
