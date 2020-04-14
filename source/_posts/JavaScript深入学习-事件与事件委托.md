@@ -3,7 +3,7 @@ title: JavaScript深入学习(二)--事件与事件委托
 date: 2019-11-05 08:20:05
 categories: JavaScript深入学习
 tags: [JavaScript, Event Bubbling, Event Delegation]
-thumbnail: http://image.linsenx.com/blog/2019-11-05-evening-55067.png?imageMogr2/format/webp/blur/1x0/quality/75%7Cimageslim
+thumbnail: https://image.linsenx.com/blog/2019-11-05-evening-55067.png?imageMogr2/format/webp/blur/1x0/quality/75%7Cimageslim
 toc: true
 ---
 
@@ -23,7 +23,7 @@ toc: true
 
 > 下图展示了一个事件传播的完整流程，从中我们可以清晰的看到事件传播的三个阶段(1)、(2)、(3)
 
-<img src="http://image.linsenx.com/blog/2019-11-05-8861DE12-EAD2-47A7-9E91-CF873824AF41.png" height="500" />
+<img src="https://image.linsenx.com/blog/2019-11-05-8861DE12-EAD2-47A7-9E91-CF873824AF41.png" height="500" />
 
 ## 监听事件
 
@@ -68,17 +68,17 @@ target.addEventListener(type, listener[, useCapture]);
 </div>
 ```
 
-![image-20191105101729646](http://image.linsenx.com/blog/2019-11-05-021732.png)
+![image-20191105101729646](https://image.linsenx.com/blog/2019-11-05-021732.png)
 
 > 当在 B 元素的监听器中添加 `stopPropagation()` 语句，输出如下：
 
-![image-20191105101758140](http://image.linsenx.com/blog/2019-11-05-030433.png)
+![image-20191105101758140](https://image.linsenx.com/blog/2019-11-05-030433.png)
 
 可以看出，在事件传播阶段中，位于 B捕获事件 之后的监听器（C命中事件的两个监听器）都没有得到调用，事件停止了传播。
 
 > 之后，改用 `stopImmediatePropagation()`， 输出如下：
 
-![image-20191105102118219](http://image.linsenx.com/blog/2019-11-05-030441.png)
+![image-20191105102118219](https://image.linsenx.com/blog/2019-11-05-030441.png)
 
 可以看出，**不但 B 之后的事件被阻止**了，**第二个 B捕获 监听器也没有得到调用**（没有输出`B Capture twice`）。
 
@@ -129,5 +129,5 @@ container.addEventListener('click', e => {
 
 
 
-![image-20191105105848669](http://image.linsenx.com/blog/2019-11-05-030449.png)
+![image-20191105105848669](https://image.linsenx.com/blog/2019-11-05-030449.png)
 

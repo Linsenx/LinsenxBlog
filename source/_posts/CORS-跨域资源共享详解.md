@@ -2,7 +2,7 @@
 title: CORS-跨域资源共享详解
 date: 2020-04-06 17:17:56
 tags: [CORS]
-thumbnail: http://image.linsenx.com/blog/2020-04-06-fantasy-2543658_1920.jpg?imageMogr2/format/webp/blur/1x0/quality/75%7Cimageslim
+thumbnail: https://image.linsenx.com/blog/2020-04-06-fantasy-2543658_1920.jpg?imageMogr2/format/webp/blur/1x0/quality/75%7Cimageslim
 toc: true
 ---
 
@@ -69,7 +69,7 @@ CORS需要浏览器和服务器的共同支持：
 
 以下是非简单请求的请求流程：
 
-![](http://image.linsenx.com/blog/2020-04-06-Untitled.png)
+![](https://image.linsenx.com/blog/2020-04-06-Untitled.png)
 
 1. 在发起真正产生作用的请求前，浏览器发送『预检请求』并在 HTTP 请求头中添加 `Origin` 字段；并添加 `Access-Control-Request-Method` 描述主请求的方法；以及添加 `Access-Control-Request-Header` 描述用到的额外请求头字段。
 2. 若服务器认定该源站不在许可范围内，服务器会返回正常的 HTTP 响应，但是响应头中不包含`Access-Control-Allow-Origin` 、`Access-Control-Allow-Method` 等字段。

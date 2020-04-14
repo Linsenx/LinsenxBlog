@@ -3,7 +3,7 @@ title: JavaScript深入学习(一) -- 事件循环
 date: 2019-09-17 18:25:55
 categories: JavaScript深入学习
 tags: [JavaScript, Event Loop]
-thumbnail: http://image.linsenx.com/blog/2019-09-19-daniel-leone-v7daTKlZzaw-unsplash.jpg?imageMogr2/format/webp/blur/1x0/quality/75%7Cimageslim
+thumbnail: https://image.linsenx.com/blog/2019-09-19-daniel-leone-v7daTKlZzaw-unsplash.jpg?imageMogr2/format/webp/blur/1x0/quality/75%7Cimageslim
 toc: true
 ---
 
@@ -21,7 +21,7 @@ toc: true
 
 下图为执行栈的可视化演示：
 
-![](http://image.linsenx.com/blog/2019-09-20-155541.gif)
+![](https://image.linsenx.com/blog/2019-09-20-155541.gif)
 
 从上图我们可以看到，JavaScript脚本的执行就是往执行栈中压入函数，之后根据先入后出的原则依次执行函数后将其从栈中弹出，并将返回值传递给之后的函数。
 
