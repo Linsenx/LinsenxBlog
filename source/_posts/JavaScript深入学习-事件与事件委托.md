@@ -3,7 +3,7 @@ title: JavaScript深入学习(二)--事件与事件委托
 date: 2019-11-05 08:20:05
 categories: JavaScript深入学习
 tags: [JavaScript, Event Bubbling, Event Delegation]
-thumbnail: https://image.linsenx.com/blog/2019-11-05-evening-55067.png?imageMogr2/format/webp/blur/1x0/quality/75%7Cimageslim
+thumbnail: https://image.linsenx.com/blog/2019-11-05-evening-55067.png
 toc: true
 ---
 
