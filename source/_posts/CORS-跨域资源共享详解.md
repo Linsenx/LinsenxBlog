@@ -2,7 +2,7 @@
 title: CORS-跨域资源共享详解
 date: 2020-04-06 17:17:56
 tags: [CORS]
-thumbnail: https://image.linsenx.com/blog/2020-04-06-fantasy-2543658_1920.jpg
+thumbnail: https://image.linsenx.com/blog/2020-04-06-fantasy-2543658_1920.jpg?imageMogr2/format/jpg/interlace/1/blur/1x0/quality/50|imageslim
 toc: true
 ---
 

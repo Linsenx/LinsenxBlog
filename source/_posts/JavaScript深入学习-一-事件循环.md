@@ -3,7 +3,7 @@ title: JavaScript深入学习(一) -- 事件循环
 date: 2019-09-17 18:25:55
 categories: JavaScript深入学习
 tags: [JavaScript, Event Loop]
-thumbnail: https://image.linsenx.com/blog/2019-09-19-daniel-leone-v7daTKlZzaw-unsplash.jpg
+thumbnail: https://image.linsenx.com/blog/2019-09-19-daniel-leone-v7daTKlZzaw-unsplash.jpg?imageMogr2/format/jpg/interlace/1/blur/1x0/quality/50|imageslim
 toc: true
 ---
 
