@@ -1,7 +1,7 @@
 ---
 title: HTTP/2 特性概述
 date: 2020-04-18 23:41:56
-tags:[HTTP/2]
+tags: [HTTP/2]
 thumbnail: https://image.linsenx.com/blog/2020-04-18-Xnip2020-04-18_23-49-38.png?imageMogr2/format/jpg/interlace/1/blur/1x0/quality/50|imageslim
 toc: true
 ---
